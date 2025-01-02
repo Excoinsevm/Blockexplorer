@@ -7,7 +7,7 @@ type ClientContextType = {
   updateClient: (rpcUrl: string, chainId: number) => Promise<boolean>;
 };
 const defaults: ClientContextType = {
-  client: new RPCClient('http://localhost:8545', 31337), // default client
+  client: new RPCClient('http://rpc.trigonevm.space', 929), // default client
   updateClient: async (rpcUrl: string, chainId: number) => false, // dummy function
 };
 const ClientContext = createContext<ClientContextType>(defaults);
